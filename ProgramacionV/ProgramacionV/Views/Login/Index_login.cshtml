@@ -1,0 +1,225 @@
+﻿@model ProgramacionV.Models.LoginViewModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Iniciar Sesión";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Rincón Psi - Login</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+    <style>
+
+            /*==================================================
+                    ESTILO GLOBAL RINCÓN PSI
+                    ==================================================*/
+
+            :root {
+                --azul-principal: #003A8C;
+                --azul-secundario: #0A4FAF;
+                --fondo: #F5F8FC;
+                --blanco: #FFFFFF;
+            }
+
+            * {
+                box-sizing: border-box;
+                font-family: 'Segoe UI', sans-serif;
+            }
+
+            body {
+                background: var(--fondo);
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*==================================================
+                    TARJETA LOGIN
+                    ==================================================*/
+
+            .login-card {
+                width: 450px;
+                background: white;
+                padding: 40px;
+                border-radius: 18px;
+                box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+            }
+
+            .titulo {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+                .titulo h1 {
+                    color: var(--azul-principal);
+                    font-size: 42px;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                }
+
+                .titulo p {
+                    color: #666;
+                    margin: 0;
+                }
+
+            .form-label {
+                font-weight: 600;
+                color: #333;
+            }
+
+            .form-control {
+                height: 45px;
+            }
+
+            .btn-rinconpsi {
+                width: 100%;
+                background: var(--azul-principal);
+                color: white;
+                font-weight: bold;
+                padding: 12px;
+                border: none;
+                border-radius: 8px;
+                transition: .3s;
+            }
+
+                .btn-rinconpsi:hover {
+                    background: var(--azul-secundario);
+                    color: white;
+                }
+
+            /*==================================================
+                    CREAR USUARIO
+                    ==================================================*/
+
+            .registro {
+                margin-top: 25px;
+                text-align: center;
+                border-top: 1px solid #ddd;
+                padding-top: 20px;
+            }
+
+                .registro a {
+                    text-decoration: none;
+                    color: var(--azul-principal);
+                    font-weight: bold;
+                }
+
+                    .registro a:hover {
+                        text-decoration: underline;
+                    }
+
+            /*==================================================
+                    FOOTER
+                    ==================================================*/
+
+            .copyright {
+                margin-top: 20px;
+                text-align: center;
+                color: #777;
+                font-size: 13px;
+            }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="login-card">
+
+        <div class="titulo">
+
+            <img src="~/Imagenes/logo_eduges.png"
+                 style="width:100px;margin-bottom:15px;">
+
+            <h1>Rincón Psi</h1>
+
+            <p>
+                Sistema Integral de Gestión Psicológica
+            </p>
+
+        </div>
+
+        <form asp-controller="Login"
+              asp-action="Index"
+              method="post">
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Usuario
+                </label>
+
+                <input asp-for="username"
+                       class="form-control" />
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label">
+                    Contraseña
+                </label>
+
+                <input asp-for="password"
+                       type="password"
+                       class="form-control" />
+
+            </div>
+
+            <button type="submit"
+                    class="btn-rinconpsi">
+
+                Ingresar
+
+            </button>
+
+        </form>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger mt-3">
+                @ViewBag.Error
+            </div>
+        }
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success mt-3">
+                @TempData["Success"]
+            </div>
+        }
+
+        <div class="registro">
+
+            <p>
+                ¿No tiene cuenta?
+            </p>
+
+            <a asp-controller="Login"
+                   asp-action="Register">
+
+                Crear nuevo usuario
+
+            </a>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 Rincón Psi
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,7 +1,11 @@
+using ProgramacionV.Models;
+
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<DBController>();
 
 var app = builder.Build();
 
@@ -23,7 +27,5 @@ app.MapStaticAssets();
 app.MapControllerRoute(
    name: "default",
    pattern: "{controller=Login}/{action=Index}/{id?}");
-
-
-
 app.Run();
+

@@ -778,11 +778,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\NSLP\\3 año, primer cuatrimestre\\Programacion 5\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Desktop\\NSLP\\3 año, primer cuatrimestre\\Programacion 5\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV.csproj",
       "projectName": "ProgramacionV",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\NSLP\\3 año, primer cuatrimestre\\Programacion 5\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV.csproj",
+      "projectPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\NSLP\\3 año, primer cuatrimestre\\Programacion 5\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\NSLP\\3 año, primer cuatrimestre\\Programacion 5\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\NSLP\\3 año, primer cuatrimestre\\Programacion 5\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

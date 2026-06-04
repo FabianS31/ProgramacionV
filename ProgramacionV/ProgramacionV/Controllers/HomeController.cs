@@ -1,25 +1,32 @@
 using Microsoft.AspNetCore.Mvc;
 using ProgramacionV.Models;
-using System.Diagnostics;
 
 namespace ProgramacionV.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly DBController _db;
+
+        public HomeController(DBController db)
+        {
+            _db = db;
+        }
+
         public IActionResult Index()
         {
-            return View();
-        }
+            ViewBag.TotalAlumnos =
+                _db.Count("Alumnos");
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+            ViewBag.TotalProfesionales =
+                _db.Count("Profesionales");
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            ViewBag.TotalHistorias =
+                _db.Count("Historia_Clinica");
+
+            ViewBag.TotalUsuarios =
+                _db.Count("Users");
+
+            return View();
         }
     }
 }
