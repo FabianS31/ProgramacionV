@@ -187,7 +187,6 @@ C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\P
 C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\ProgramacionV\ProgramacionV\ProgramacionV\ProgramacionV\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\ProgramacionV\ProgramacionV\ProgramacionV\ProgramacionV\obj\Debug\net10.0\scopedcss\bundle\ProgramacionV.styles.css
 C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\ProgramacionV\ProgramacionV\ProgramacionV\ProgramacionV\obj\Debug\net10.0\scopedcss\projectbundle\ProgramacionV.bundle.scp.css
-C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\ProgramacionV\ProgramacionV\ProgramacionV\ProgramacionV\obj\Debug\net10.0\compressed\et5ed9jq3r-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\ProgramacionV\ProgramacionV\ProgramacionV\ProgramacionV\obj\Debug\net10.0\compressed\x5c31wdkmy-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\ProgramacionV\ProgramacionV\ProgramacionV\ProgramacionV\obj\Debug\net10.0\compressed\onxrahdu5h-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\ProgramacionV\ProgramacionV\ProgramacionV\ProgramacionV\obj\Debug\net10.0\compressed\p01jaz70r1-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -263,3 +262,4 @@ C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\P
 C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\ProgramacionV\ProgramacionV\ProgramacionV\ProgramacionV\obj\Debug\net10.0\ProgramacionV.pdb
 C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\ProgramacionV\ProgramacionV\ProgramacionV\ProgramacionV\obj\Debug\net10.0\ProgramacionV.genruntimeconfig.cache
 C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\ProgramacionV\ProgramacionV\ProgramacionV\ProgramacionV\obj\Debug\net10.0\ref\ProgramacionV.dll
+C:\Users\ASUS\OneDrive\Desktop\NSLP\3 año, primer cuatrimestre\Programacion 5\ProgramacionV\ProgramacionV\ProgramacionV\ProgramacionV\obj\Debug\net10.0\compressed\et5ed9jq3r-{0}-4ai5mr5049-4ai5mr5049.gz

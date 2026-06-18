@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ProgramacionV.Models;
 
 namespace ProgramacionV.Controllers
 {
@@ -20,21 +21,27 @@ namespace ProgramacionV.Controllers
         // GET: AlumnosController/Create
         public ActionResult Create()
         {
-            return View();
+            return View("~/Views/Pacientes/AltaPaciente.cshtml");
         }
 
         // POST: AlumnosController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(AlumnoViewModel alumno)
         {
             try
             {
+                if (!ModelState.IsValid)
+                {
+                    return View("AltaPaciente", alumno);
+                }
+
+                // Aquí iría tu lógica con DBController para guardar
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View("AltaPaciente", alumno);
             }
         }
 

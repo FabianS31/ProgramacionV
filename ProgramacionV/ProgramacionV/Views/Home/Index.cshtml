@@ -1,215 +1,43 @@
-﻿<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rincón Psi</title>
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
 
-    <style>
+<div class="row" style="margin: 0; padding: 20px;">
 
-            /*==================================================
-                    ESTILOS GLOBALES EDUGES
-                    REUTILIZAR EN TODAS LAS PÁGINAS
-                    ==================================================*/
+    <div class="col-md-3">
+        <div class="card-eduges" style="min-height: 80vh; align-items: stretch; justify-content: flex-start; padding: 25px;">
+            <h3 style="font-size: 22px; text-align: center; margin-bottom: 20px; color: var(--azul-principal);">Menú Diario</h3>
 
-            :root {
-                --azul-principal: #003A8C;
-                --azul-secundario: #0A4FAF;
-                --fondo: #F5F8FC;
-                --blanco: #FFFFFF;
-                --texto: #333333;
-            }
-
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Segoe UI', sans-serif;
-            }
-
-            body {
-                background: var(--fondo);
-            }
-
-            /*==================================================
-                    FIN ESTILOS GLOBALES EDUGES
-                    ==================================================*/
-
-
-            /*==================================================
-                    HERO
-                    ==================================================*/
-
-            .hero {
-                text-align: center;
-                padding: 60px 20px 40px 20px;
-            }
-
-                .hero h2 {
-                    color: var(--azul-principal);
-                    font-size: 48px;
-                    margin-bottom: 15px;
-                }
-
-                .hero p {
-                    color: #666;
-                    font-size: 18px;
-                }
-
-            /*==================================================
-                    FIN HERO
-                    ==================================================*/
-
-
-            /*==================================================
-                    TARJETAS DASHBOARD
-                    ==================================================*/
-
-            .contenedor-cards {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 30px;
-                margin: 40px auto;
-                max-width: 1400px;
-            }
-
-            .card-eduges {
-                width: 280px;
-                min-height: 260px;
-                background: white;
-                border-radius: 15px;
-                box-shadow: 0 4px 15px rgba(0,0,0,0.10);
-                padding: 25px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                text-align: center;
-                transition: 0.3s;
-            }
-
-                .card-eduges:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-                }
-
-                .card-eduges h3 {
-                    color: var(--azul-principal);
-                    font-size: 28px;
-                    font-weight: bold;
-                }
-
-            .numero {
-                font-size: 72px;
-                font-weight: bold;
-                color: var(--azul-secundario);
-                line-height: 1;
-            }
-
-            .btn-eduges {
-                display: block;
-                width: 100%;
-                background: var(--azul-principal);
-                color: white;
-                text-decoration: none;
-                padding: 12px;
-                border-radius: 8px;
-                font-size: 16px;
-                font-weight: bold;
-                transition: 0.3s;
-            }
-
-                .btn-eduges:hover {
-                    background: var(--azul-secundario);
-                    color: white;
-                }
-
-            /*==================================================
-                    FIN TARJETAS DASHBOARD
-                    ==================================================*/
-
-
-            /*==================================================
-                    FOOTER
-                    ==================================================*/
-
-            footer {
-                background: var(--azul-principal);
-                color: white;
-                text-align: center;
-                padding: 20px;
-                margin-top: 50px;
-            }
-
-            /*==================================================
-                    FIN FOOTER
-                    ==================================================*/
-
-    </style>
-</head>
-<body>
-
-    <section class="hero">
-        <h2>Rincón Psi</h2>
-
-        <p>
-            Administre alumnos, profesionales, historias clínicas y reportes
-            desde una única plataforma.
-        </p>
-    </section>
-
-
-    <section class="contenedor-cards">
-
-        <div class="card-eduges">
-
-            <h3>ALUMNOS</h3>
-
-            <div class="numero">
-                @ViewBag.TotalAlumnos
+            <div style="margin-bottom: 20px; color: var(--texto);">
+                <p><strong>Hoy:</strong> @DateTime.Now.ToString("dd/MM/yyyy")</p>
+                <hr />
+                <p>Actividades programadas...</p>
             </div>
 
-            <a href="#" class="btn-eduges">
-                Gestionar Alumnos
-            </a>
-
+            <a asp-controller="Calendario" asp-action="Index" class="btn-eduges" style="margin-top: auto;">Calendario</a>
         </div>
+    </div>
 
+    <div class="col-md-9">
+        <section class="hero" style="padding-top: 0; text-align: left;">
+            <h2>Rincón Psi</h2>
+            <p>Administre pacientes y profesionales desde una única plataforma.</p>
+        </section>
 
-        <div class="card-eduges">
+        <section class="contenedor-cards" style="display: flex; flex-direction: row; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
 
-            <h3>PROFESIONALES</h3>
-
-            <div class="numero">
-                @ViewBag.TotalProfesionales
+            <div class="card-eduges" style="flex: 1 1 300px; max-width: 400px; min-height: 200px; align-items: center; justify-content: space-between;">
+                <h3>PACIENTES</h3>
+                <div class="numero" style="font-size: 32px; font-weight: bold; color: var(--azul-principal);">@ViewBag.TotalAlumnos</div>
+                <a asp-controller="Alumnos" asp-action="Create" class="btn-eduges"> Gestionar Pacientes</a>
             </div>
 
-            <a href="#" class="btn-eduges">
-                Gestionar Profesionales
-            </a>
-
-        </div>
-
-
-        <div class="card-eduges">
-
-            <h3>HISTORIAS CLÍNICAS</h3>
-
-            <div class="numero">
-                @ViewBag.TotalHistorias
+            <div class="card-eduges" style="flex: 1 1 300px; max-width: 400px; min-height: 200px; align-items: center; justify-content: space-between;">
+                <h3>PROFESIONALES</h3>
+                <div class="numero" style="font-size: 32px; font-weight: bold; color: var(--azul-principal);">@ViewBag.TotalProfesionales</div>
+                <a href="#" class="btn-eduges"> Gestionar Profesionales</a>
             </div>
 
-            <a href="#" class="btn-eduges">
-                Gestionar Historias Clínicas
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <footer> © 2026 EduGes - Sistema de Gestión Educativa </footer>
-
-</body>
-</html>
+        </section>
+    </div>
+</div>

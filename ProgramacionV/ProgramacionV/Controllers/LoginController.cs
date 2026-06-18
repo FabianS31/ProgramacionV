@@ -1,6 +1,8 @@
 ﻿using ProgramacionV.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using BCrypt.Net;
+using BCrypt;
 
 namespace ProgramacionV.Controllers
 {

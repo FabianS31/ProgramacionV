@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "G0WQgYyMEYk=",
+  "dgSpecHash": "e3FsbUKuulc=",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\NSLP\\3 año, primer cuatrimestre\\Programacion 5\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV\\ProgramacionV.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.13\\microsoft.bcl.cryptography.9.0.13.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.data.sqlclient\\7.0.1\\microsoft.data.sqlclient.7.0.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.data.sqlclient.extensions.abstractions\\1.0.0\\microsoft.data.sqlclient.extensions.abstractions.1.0.0.nupkg.sha512",
